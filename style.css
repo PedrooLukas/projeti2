@@ -1,4 +1,4 @@
-/* Global Styles */
+/*  geral */
 body, a, li {
     margin: 0;
     padding: 0;
@@ -30,7 +30,7 @@ li {
 
 /* Navbar */
 .navbar {
-    background-color: #005675;
+    background-color: #0060ae;
 }
 
 .nav-link, .botaodrop {
@@ -73,7 +73,7 @@ li {
     padding: 0.5rem 1rem;
 }
 
-/* Custom Select */
+
 .select-custom {
     font-size: 16px;
     line-height: 1.5;
@@ -89,7 +89,7 @@ li {
     outline: none;
 }
 
-/* Secondary Navbar */
+
 .nav2 {
     background-color: #00a97a;
 }
@@ -98,7 +98,7 @@ li {
     color: black;
 }
 
-/* Buttons */
+
 .learn-more-btn,
 .botao1,
 .diariobnt {
@@ -107,6 +107,11 @@ li {
     border: none;
     padding: 10px 25px;
     border-radius: 5px;
+}
+
+.diariobnt:hover {
+    background-color: #0060ae ;
+    color: white;
 }
 
 .btncentro {
@@ -132,7 +137,7 @@ li {
     background-color: #f8f9fa;
 }
 
-/* Miscellaneous */
+
 .logo {
     max-width: 200px;
 }
@@ -151,27 +156,6 @@ li {
 
 .carousel-caption {
     color: black;
-}
-
-.nletter {
-    position: relative;
-    overflow: hidden;
-    padding: 4rem 2rem;
-}
-
-.nletter::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(https://www.portal.ap.gov.br/img/noticias/d2dfed150ba6079d4682d6f81966b5a0.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: blur(2px);
-    z-index: -1;
 }
 
 /* Banner */
@@ -219,7 +203,7 @@ li {
 }
 
 .footer {
-    background-color: #000;
+    background-color: #0060ae;
     color: #fff;
     padding: 60px 0;
   }
@@ -286,3 +270,26 @@ li {
     font-size: 14px;
     color: #999;
   }
+
+.pub1 {
+    background-color: #00a97a;
+    color: white;
+}
+
+.pub1:hover {
+    background-color: #0060ae;
+    color: white;
+}
+
+.breadcrumb-item > a {
+    color: black;
+}
+
+[data-theme="dark"] {
+    background-color: #111 !important;
+    color: #eee;
+  }
+
+.dropdown > button {
+    font-weight: 500;
+}
