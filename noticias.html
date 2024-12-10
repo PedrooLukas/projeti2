@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> NOTÍCIAS SEED</title>
+    
+    <!-- Link do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="noticias.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <style>
+        .darkmode-layer, .darkmode-toggle {
+        z-index: 500;}
+    </style>
+</head>
+<body>
+<!-- nav bar 1 -->
+<div class="top-bar">
+    <div class="container d-flex justify-content-center gov">
+        <a href="index.html"><img src="https://i.ibb.co/xDQTv9W/gov-1.png" alt="gov-1"></a> 
+        </div>
+    </div>
+</div>
+
+<!-- nav bar 1 -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <!-- Logo e título -->
+        <div class="navbar-header d-flex align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="https://www.prodap.ap.gov.br/image/logo-gea-white-2024.png" alt="Logo" class="logo me-2" style="height: 40px;">
+                <span class="seed text-white"></span>
+            </a>
+        </div>
+        
+        <!-- Contêiner para alinhar logo e select -->
+        <div class="d-flex align-items-center">
+            <select 
+                class="form-select select-custom custom-dropdown" 
+                aria-label="Órgãos Governamentais" 
+                style="width: auto;" 
+                onchange="window.open(this.value, '_blank');"
+            >
+                <option value="" class="d-none" selected disabled>Órgãos Governamentais</option>
+                <option value="https://sead.portal.ap.gov.br/">Administração</option>
+                <option value="https://ageamapa.portal.ap.gov.br/">Agência Amapá</option>
+                <option value="https://www.afap.ap.gov.br/">Agência de Fomento</option>
+            </select>
+        </div>
+    </div>
+</nav>
+<div class="container">
+<div class="row g-4 align-items-center">
+    <div class="col-12 col-md-6 order-md-1 order-2 ps-md-5 text-md-start text-center py-3 py-md-0">
+        <div>
+            <h1 class="display-5 fw-bold mb-3">EDUCAÇÃO</h1>
+            <h4 class="text-muted">SECRETÁRIA DE ESTADO DE EDUCAÇÃO</h4>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 text-md-end text-center order-md-2 order-1 d-none d-md-block banner1">
+        <img 
+            src="https://i.ibb.co/5kRFfVS/girl-doing-her-homework-while-having-breakfast.jpg" 
+            alt="Banner da Secretaria de Educação" 
+            class="img-fluid shadow-lg rounded">
+    </div>
+</div>
+</div>
+</div>
+<!-- nav bar 2 -->
+<nav class="navbar navbar-expand-lg bg-success text-white py-2">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center w-100">
+            <!-- Itens de Navegação para Telas Grandes -->
+            <div class="d-none d-md-flex gap-4 align-items-center">
+                <div class="dropdown">
+                    <ul class="navbar-nav ms-auto d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link boldd" href="index.html">Página inicial</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="botaodrop btn btn-sucess dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Institucional
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Rede Física</a></li>
+                                <li><a class="dropdown-item" href="#">Recurso Humanos</a></li>
+                                <li><a class="dropdown-item" href="#">Quem Somos</a></li>
+                                <li><a class="dropdown-item" href="#">Perfil dos Gestores</a></li>
+                                <li><a class="dropdown-item" href="#">Finanças e Contabilidade</a></li>
+                                <li><a class="dropdown-item" href="#">Educação Específica</a></li>
+                                <li><a class="dropdown-item" href="#">Educação Básica e Educação Profissional</a></li>
+                                <li><a class="dropdown-item" href="#">Desenv. e Normalização das Políticas Educacionais</a></li>
+                                <li><a class="dropdown-item" href="#">Apoio ao Estudante</a></li>
+                                <li><a class="dropdown-item" href="#">Administração</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link boldd" href="s.html">Diário Oficial</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link boldd" href="acessibilidade.html">Acessibilidade</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="botaodrop btn btn-sucess dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Serviços
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Requerimento</a></li>
+                                <li><a class="dropdown-item" href="#">Notícias Antigas</a></li>
+                                <li><a class="dropdown-item" href="#">Junta médica</a></li>
+                                <li><a class="dropdown-item" href="#">Ficha de licença prêmio</a></li>
+                                <li><a class="dropdown-item" href="#">Ficha de estágio probatório</a></li>
+                                <li><a class="dropdown-item" href="#">Contra cheque</a></li>
+                                <li><a class="dropdown-item" href="#">E-Doc</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="botaodrop btn btn-sucess dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Legislação
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Sistema Estadual de Educação</a></li>
+                                <li><a class="dropdown-item" href="#">Relatório de Monitoramento do Plano Estadual - Bênio 2020-2023</a></li>
+                                <li><a class="dropdown-item" href="#">Relatório de Monitoramento do Plano Estadual - Bênio 2018-2019</a></li>
+                                <li><a class="dropdown-item" href="#">Regulamento da Secretária de Estado da Educação</a></li>
+                                <li><a class="dropdown-item" href="#">Regimento Júrídico</a></li>
+                                <li><a class="dropdown-item" href="#">Plano Estadual de Educação</a></li>
+                                <li><a class="dropdown-item" href="#">E-Doc</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <li class="nav-item">
+                                <a class="nav-link boldd" href="#linku">Link Úteis</a>
+                            </li>
+                            <ul class="dropdown-menu text-white">
+                                <li><a class="dropdown-item" href="#">CONSED</a></li>
+                                <li><a class="dropdown-item" href="#">Escola Digital</a></li>
+                                <li><a class="dropdown-item" href="#">INEP</a></li>
+                                <li><a class="dropdown-item" href="#">Ministério da Educação</a></li>
+                                <li><a class="dropdown-item" href="#">Revista da Educação</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="botaodrop btn btn-sucess dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Outros
+                            </button>
+                            <ul class="dropdown-menu text-white">
+                                <li><a class="dropdown-item" href="#">Galeria</a></li>
+                                <li><a class="dropdown-item" href="#">Repasses</a></li>
+                                <li><a class="dropdown-item" href="#">Fale conosco</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Botão de Toggle para Telas Menores -->
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Ícone "home" -->
+            <a href="/" class="text-dark text-decoration-none d-md-none align-items-center home-icon">
+                <i class="bi bi-house-fill"></i>
+            </a>
+        </div>
+        <div class="d-none d-md-flex align-items-center justify-content-end">
+            <input class="barrapesquisa me-2" type="text" placeholder="  Pesquisar">
+            <a href="noticias.html">
+                <i class="fa-solid fa-magnifying-glass fa-fade fa-lg" style="color: #ffffff;"></i>
+            </a>
+        </div>
+    </div>
+</nav>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+    <div class="offcanvas-header bg-success text-white">
+        <h5 class="offcanvas-title" id="mobileNavLabel">Menu</h5>
+        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body bg-success text-white">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Página Inicial</a>
+            </li>
+            <li class="nav-item dropdown">
+                <button class="botaodrop btn btn-sucess dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Institucional
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Rede Física</a></li>
+                    <li><a class="dropdown-item" href="#">Recurso Humanos</a></li>
+                    <li><a class="dropdown-item" href="#">Quem Somos</a></li>
+                    <li><a class="dropdown-item" href="#">Perfil dos Gestores</a></li>
+                    <li><a class="dropdown-item" href="#">Finanças e Contabilidade</a></li>
+                    <li><a class="dropdown-item" href="#">Educação Específica</a></li>
+                    <li><a class="dropdown-item" href="#">Educação Básica e Educação Profissional</a></li>
+                    <li><a class="dropdown-item" href="#">Desenv. e Normalização das Políticas Educacionais</a></li>
+                    <li><a class="dropdown-item" href="#">Apoio ao Estudante</a></li>
+                    <li><a class="dropdown-item" href="#">Administração</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <button class="botaodrop btn btn-sucess dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Serviços
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Requerimento</a></li>
+                    <li><a class="dropdown-item" href="#">Notícias Antigas</a></li>
+                    <li><a class="dropdown-item" href="#">Junta médica</a></li>
+                    <li><a class="dropdown-item" href="#">Ficha de licença prêmio</a></li>
+                    <li><a class="dropdown-item" href="#">Ficha de estágio probatório</a></li>
+                    <li><a class="dropdown-item" href="#">Contra cheque</a></li>
+                    <li><a class="dropdown-item" href="#">E-Doc</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="s.html">Diário Oficial</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="acessibilidade.html">Acessibilidade</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                    Links úteis
+                </a>
+                <ul class="dropdown-menu text-white">
+                    <li><a class="dropdown-item" href="#">CONSED</a></li>
+                    <li><a class="dropdown-item" href="#">Escola Digital</a></li>
+                    <li><a class="dropdown-item" href="#">INEP</a></li>
+                    <li><a class="dropdown-item" href="#">Ministério da Educação</a></li>
+                    <li><a class="dropdown-item" href="#">Revista da Educação</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                    Outros
+                </a>
+                <ul class="dropdown-menu text-white">
+                    <li><a class="dropdown-item" href="#">Galeria</a></li>
+                    <li><a class="dropdown-item" href="#">Repasses</a></li>
+                    <li><a class="dropdown-item" href="#">Fale conosco</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <button class="botaodrop btn btn-sucess dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Legislação
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Sistema Estadual de Educação</a></li>
+                    <li><a class="dropdown-item" href="#">Relatório de Monitoramento do Plano Estadual - Bênio 2020-2023</a></li>
+                    <li><a class="dropdown-item" href="#">Relatório de Monitoramento do Plano Estadual - Bênio 2018-2019</a></li>
+                    <li><a class="dropdown-item" href="#">Regulamento da Secretária de Estado da Educação</a></li>
+                    <li><a class="dropdown-item" href="#">Regimento Júrídico</a></li>
+                    <li><a class="dropdown-item" href="#">Plano Estadual de Educação</a></li>
+                    <li><a class="dropdown-item" href="#">E-Doc</a></li>
+                </ul>
+            </li>
+            
+    </div>
+</div>
+<div class="imgc">  
+</div>
+<div class="container my-5">
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Início</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Todas as Notícias</li>
+        </ol>
+    </nav>
+
+    <!-- Título e barra de busca -->
+    <h1 class="mb-4">Todas as Notícias</h1>
+    <div class="d-flex justify-content-between align-items-center search-bar">
+        <div class="total-count">Total de registros: <strong>1580</strong></div>
+    </div>
+
+    <!-- Lista de notícias -->
+    <div class="row">
+        <!-- Notícia 1 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="news-card">
+                <img src="https://via.placeholder.com/350x200" alt="Imagem da notícia">
+                <div class="news-card-body">
+                    <h2 class="news-card-title text-dark">‘Agora dá satisfação estudar’, diz aluna sobre Escola Quilombola Antônio Figueiredo</h2>
+                    <div class="news-meta">Publicado em 10/12/2024</div>
+                    <p>O Governo do Amapá realizou a entrega da Escola Quilombola Estadual Antônio Figueiredo da Silva, localizada na comunidade do Torrão do Matapi...</p>
+                    <a href="#" class="btn pub1 btn-sm">Ler mais</a>
+                </div>
+            </div>
+        </div>
+        <!-- Notícia 2 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="news-card">
+                <img src="https://via.placeholder.com/350x200" alt="Imagem da notícia">
+                <div class="news-card-body">
+                    <h2 class="news-card-title text-dark">‘Estamos restaurando a rede física como lugar adequado para o ensino’, ressalta governador</h2>
+                    <div class="news-meta">Publicado em 09/12/2024</div>
+                    <p>A Escola Quilombola Estadual Antônio Figueiredo da Silva, no município de Macapá, foi reconstruída, ampliada e entregue...</p>
+                    <a href="#" class="btn pub1 btn-sm">Ler mais</a>
+                </div>
+            </div>
+        </div>
+        <!-- Notícia 3 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="news-card">
+                <img src="https://via.placeholder.com/350x200" alt="Imagem da notícia">
+                <div class="news-card-body">
+                    <h2 class="news-card-title text-dark">Governo do Amapá entrega nova Escola Quilombola Estadual Professor Antônio Figueiredo</h2>
+                    <div class="news-meta">Publicado em 08/12/2024</div>
+                    <p>Dando continuidade à reestruturação das unidades educacionais, o Governo do Amapá entregou mais uma escola reformada...</p>
+                    <a href="#" class="btn pub1 btn-sm">Ler mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Paginação -->
+    <nav aria-label="Navegação de página">
+        <ul class="pagination justify-content-center mt-4">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Anterior</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Próximo</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <section>
+      <footer class="footer">
+          <div class="container">
+          <footer class="footer">
+              <div class="footer-top">
+                <div class="footer-column">
+                  <h3 class="footer-title">Cidadão</h3>
+                  <ul class="footer-list">
+                    <li><a href="#">2ª via da conta de água</a></li>
+                    <li><a href="#">2ª via da conta de energia</a></li>
+                    <li><a href="#">Boletim de Ocorrência (online)</a></li>
+                    <li><a href="#">Concursos</a></li>
+                    <li><a href="#">Consultas de veículos</a></li>
+                    <li><a href="#">Consultar habilitação</a></li>
+                    <li><a href="#">Matrícula 2024</a></li>
+                  </ul>
+                </div>
+                <div class="footer-column">
+                  <h3 class="footer-title">Servidores</h3>
+                  <ul class="footer-list">
+                    <li><a href="#">Certidão Funcional</a></li>
+                    <li><a href="#">Consgignataria Online</a></li>
+                    <li><a href="#">Contra-cheque</a></li>
+                    <li><a href="#">Serviços do Servidor Federal</a></li>
+                    <li><a href="#">Solicitar Certidão de tempo de serviço</a></li>
+                    <!-- Additional categories... -->
+                  </ul>
+                </div>
+                <div class="footer-column">
+                  <h3 class="footer-title">Empresas</h3>
+                  <ul class="footer-list">
+                    <li><a href="#">Cadastro de Fornecedores</a></li>
+                    <li><a href="#">Certidão Negativa</a></li>
+                    <li><a href="#">DAR Avulso</a></li>
+                    <li><a href="#">DIAP ICMS Eletrônica</a></li>
+                    <li><a href="#">Justificativas</a></li>
+                    <li><a href="#">Licitações do Estado</a></li>
+                    <!-- Additional categories... -->
+                  </ul>
+                </div>
+                <div class="footer-column-">
+                  <h1 class="footer-title">SEED</h1>
+                  <h3 class="footer-title">Fale conosco</h3>
+                  <p class="footer-contact">seed@seed.ap.gov.br</p>
+                  <div class="footer-social">
+                    <a href="https://www.facebook.com/governoamapa" class="footer-social-link">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/governoamapa/" class="footer-social-link">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://x.com/governodoamapa" class="footer-social-link">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-bottom">
+                <p>&copy; Desenvolvido por Pedro Lukas, Ana Viana e Cassio Gabriel</p>
+              </div>
+            </footer>
+          </div>
+        </footer>
+  </section>
+    
+
+    <!-- Link do Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script>
+        const options = {
+      bottom: '64px', // default: '32px'
+      right: 'unset', // default: '32px'
+      left: '32px', // default: 'unset'
+      time: '0.5s', // default: '0.3s'
+      mixColor: '#fff', // default: '#fff'
+      backgroundColor: '#fff',  // default: '#fff'
+      buttonColorDark: '#100f2c',  // default: '#100f2c'
+      buttonColorLight: '#fff', // default: '#fff'
+      saveInCookies: false, // default: true,
+      label: '🌓', // default: ''
+      autoMatchOsTheme: true // default: true
+    }
+    
+    const darkmode = new Darkmode(options);
+    darkmode.showWidget();
+    </script>
+     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+     <script>
+       new window.VLibras.Widget('https://vlibras.gov.br/app');
+     </script>
+</body>
+</html>
