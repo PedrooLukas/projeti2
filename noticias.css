@@ -153,27 +153,6 @@ li {
     color: black;
 }
 
-.nletter {
-    position: relative;
-    overflow: hidden;
-    padding: 4rem 2rem;
-}
-
-.nletter::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(https://www.portal.ap.gov.br/img/noticias/d2dfed150ba6079d4682d6f81966b5a0.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: blur(2px);
-    z-index: -1;
-}
-
 /* Banner */
 .banner1 img {
     max-width: 450px;
