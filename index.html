@@ -33,7 +33,6 @@
             <div class="navbar-header d-flex align-items-center">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <img src="https://www.prodap.ap.gov.br/image/logo-gea-white-2024.png" alt="Logo" class="logo me-2" style="height: 40px;">
-                    <span class="seed text-white"></span>
                 </a>
             </div>
             
@@ -160,7 +159,9 @@
 
                 <!-- Botão de Toggle para Telas Menores -->
                 <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon">
+                        <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                    </span>
                 </button>
 
                 <!-- Ícone "home" -->
@@ -177,9 +178,17 @@
         </div>
     </nav>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
-        <div class="offcanvas-header bg-success text-white">
-            <h5 class="offcanvas-title" id="mobileNavLabel">Menu</h5>
-            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="offcanvas-header bg-success text-white d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-column">
+                <h5 class="offcanvas-title mb-2" id="mobileNavLabel">Menu</h5>
+            </div>
+            <div class="d-flex">
+                <input type="text" class="form-control me-2" placeholder="Pesquisar...">
+                <a href="noticias.html">
+                    <i class="fa-solid fa-magnifying-glass fa-fade fa-lg" style="color: #ffffff;"></i>
+                </a>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
         </div>
         <div class="offcanvas-body bg-success text-white">
             <ul class="navbar-nav">
@@ -259,9 +268,10 @@
                         <li><a class="dropdown-item" href="#">E-Doc</a></li>
                     </ul>
                 </li>
-                
+            </ul>
         </div>
     </div>
+    
     <div class="imgc">  
     </div>
     <!-- noticias -->
@@ -269,7 +279,7 @@
         <div class="container p-4">
             
             <div class="row align-items-center">
-                <div class="col-md-6 text-dark">
+                <div class="col-md-6 text-dark ">
                     <h1>Últimas notícias:</h1>
                     <a>
                         <button class="diariobnt btn mt-3 mb-3" onclick="window.open('noticias.html', '_blank');">
@@ -380,14 +390,13 @@
                     </div>
                 </div>    
             </div>
-            <div class="btncentro">
-                <a>
-                    <button class="diariobnt btn mt-3 mb-3" onclick="window.location.href='s.html';">
-                        TODAS AS PUBLICAÇÕES
-                    </button>
-                </a>
-                
-            </div>
+            <div class="btncentro text-center">
+              <a>
+                  <button class="diariobnt btn mt-3 mb-3" onclick="window.location.href='s.html';">
+                      TODAS AS PUBLICAÇÕES
+                  </button>
+              </a>
+          </div>
         </div>
     </section>
     <!--projetos cards-->
@@ -480,135 +489,381 @@
 <section id="linku">
     <div class="container mb-5">
         <h2 class="mb-5 split"><span class="pub">LINKS ÚTEIS</span></h2>
-            <div class="row">
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
-                                    <hr/>
-                                    <h4 class="text-center util" >INFORMAÇÃO AO CIDADÃO</h4>
-                            </div>
-                        </div>
+        <div class="wrapper1">
+            <div class="slider">
+              <div class="container2 owl-carousel owl-theme">
+        
+                <div class="cardc item">
+        
+                  <div class="img_container">
+                    <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="">
+                  </div>
+        
+                  <div class="info">
+                
+                    <div class="post">Informação ao cidadão</div>
+                    <p class="about">Fique por dentro de todas as informações pelo portal.</p>
+                  </div>
+        
+        
+                  <div class="footer1">
+                    <div class="social_icon">
+                      
                     </div>
-                    <div class="item">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
-                                    <hr/>
-                                    <h4 class="text-center util" >OUV</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
-                                    <hr/>
-                                    <h4 class="text-center util" >PORTAL DA TRANSPARÊNCIA</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
-                                    <hr/>
-                                    <h4 class="text-center util" >PORTAL DE SERVIÇOS</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
-                                    <hr/>
-                                    <h4 class="text-center util" >PORTAL DO GOVERNO</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
-                                    <hr/>
-                                    <h4 class="text-center util" >PORTAL DO SERVIDOR</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
-                                    <hr/>
-                                    <h4 class="text-center util" >PROCESSO SELETIVO</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
-                                    <hr/>
-                                    <h4 class="text-center util" >PRODOC</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
-                                    <hr/>
-                                    <h4 class="text-center util" >PROTEÇÃO</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
-                                    <hr/>
-                                    <h4 class="text-center util" >REDE MAIS BRASIL</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
-                                    <hr/>
-                                    <h4 class="text-center util" >AGENDA DO SERVIDOR</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
-                                    <hr/>
-                                    <h4 class="text-center util" >CERTIDÃO FUNCIONAL</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
-                                    <hr/>
-                                    <h4 class="text-center util" >E-DOC</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="" class="card-img-top">
-                                    <hr/>
-                                    <h4 class="text-center util" >E-SIC</h4>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="btn">
+                        <button>Saiba mais</button>
+                      </div>
+                  </div>
+        
                 </div>
+        
+                <div class="cardc item">
+        
+                    <div class="img_container">
+                      <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="">
+                    </div>
+          
+                    <div class="info">
+                  
+                      <div class="post">OUV</div>
+                      <p class="about">Sistema de Ouvidoria Pública do Amapá.</p>
+                    </div>
+          
+          
+                    <div class="footer1">
+                      <div class="social_icon">
+                        
+                      </div>
+                      <div class="btn">
+                          <button>Saiba mais</button>
+                        </div>
+                    </div>
+          
+                  </div>
+                  <div class="cardc item">
+        
+                    <div class="img_container">
+                      <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="">
+                    </div>
+          
+                    <div class="info">
+                  
+                      <div class="post">Portal da Transparência</div>
+                      <p class="about">Informações sobre a gestão pública.</p>
+                    </div>
+          
+          
+                    <div class="footer1">
+                      <div class="social_icon">
+                        
+                      </div>
+                      <div class="btn">
+                          <button>Saiba mais</button>
+                        </div>
+                    </div>
+          
+                  </div>
+                  <div class="cardc item">
+        
+                    <div class="img_container">
+                      <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="">
+                    </div>
+          
+                    <div class="info">
+                  
+                      <div class="post">Portal de Serviços</div>
+                      <p class="about">Portal de serviços públicos do Governo do Amapá</p>
+                    </div>
+          
+          
+                    <div class="footer1">
+                      <div class="social_icon">
+                        
+                      </div>
+                      <div class="btn">
+                          <button>Saiba mais</button>
+                        </div>
+                    </div>
+          
+                  </div>
+                  <div class="cardc item">
+        
+                    <div class="img_container">
+                      <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="">
+                    </div>
+          
+                    <div class="info">
+                  
+                      <div class="post">Portal do Governo</div>
+                      <p class="about">Saiba mais sobre o Governo atual.</p>
+                    </div>
+          
+          
+                    <div class="footer1">
+                      <div class="social_icon">
+                        
+                      </div>
+                      <div class="btn">
+                          <button>Saiba mais</button>
+                        </div>
+                    </div>
+          
+                  </div>
+                  <div class="cardc item">
+        
+                    <div class="img_container">
+                      <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="">
+                    </div>
+          
+                    <div class="info">
+                  
+                      <div class="post">Portal do Servidor</div>
+                      <p class="about">Fique por dentro de todas as informações sobre o serviço público.</p>
+                    </div>
+          
+          
+                    <div class="footer1">
+                      <div class="social_icon">
+                        
+                      </div>
+                      <div class="btn">
+                          <button>Saiba mais</button>
+                        </div>
+                    </div>
+          
+                  </div>
+                  <div class="cardc item">
+        
+                    <div class="img_container">
+                      <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="">
+                    </div>
+          
+                    <div class="info">
+                  
+                      <div class="post">Processo Seletivo</div>
+                      <p class="about">Todas as chamadas públicas.</p>
+                    </div>
+          
+          
+                    <div class="footer1">
+                      <div class="social_icon">
+                        
+                      </div>
+                      <div class="btn">
+                          <button>Saiba mais</button>
+                        </div>
+                    </div>
+          
+                  </div>
+                  <div class="cardc item">
+        
+                    <div class="img_container">
+                      <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="">
+                    </div>
+          
+                    <div class="info">
+                  
+                      <div class="post">PRODOC</div>
+                      <p class="about">Consultas de documentos e processos.</p>
+                    </div>
+          
+          
+                    <div class="footer1">
+                      <div class="social_icon">
+                        
+                      </div>
+                      <div class="btn">
+                          <button>Saiba mais</button>
+                        </div>
+                    </div>
+          
+                  </div>
+                  <div class="cardc item">
+        
+                    <div class="img_container">
+                      <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="">
+                    </div>
+          
+                    <div class="info">
+                  
+                      <div class="post">OUV</div>
+                      <p class="about">Sistema de Ouvidoria Pública do Amapá.</p>
+                    </div>
+          
+          
+                    <div class="footer1">
+                      <div class="social_icon">
+                        
+                      </div>
+                      <div class="btn">
+                          <button>Saiba mais</button>
+                        </div>
+                    </div>
+          
+                  </div>
+                  <div class="cardc item">
+        
+                    <div class="img_container">
+                      <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="">
+                    </div>
+          
+                    <div class="info">
+                  
+                      <div class="post">Proteção</div>
+                      <p class="about">Políticas de Proteção de Dados Pessoais e Privacidade</p>
+                    </div>
+          
+          
+                    <div class="footer1">
+                      <div class="social_icon">
+                        
+                      </div>
+                      <div class="btn">
+                          <button>Saiba mais</button>
+                        </div>
+                    </div>
+          
+                  </div>
+                  <div class="cardc item">
+        
+                    <div class="img_container">
+                      <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="">
+                    </div>
+          
+                    <div class="info">
+                  
+                      <div class="post">Rede Mais Brasil</div>
+                      <p class="about">Convênios do Governo Federal.</p>
+                    </div>
+          
+          
+                    <div class="footer1">
+                      <div class="social_icon">
+                        
+                      </div>
+                      <div class="btn">
+                          <button>Saiba mais</button>
+                        </div>
+                    </div>
+          
+                  </div>
+                  <div class="cardc item">
+        
+                    <div class="img_container">
+                      <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="">
+                    </div>
+          
+                    <div class="info">
+                  
+                      <div class="post">OUV</div>
+                      <p class="about">Sistema de Ouvidoria Pública do Amapá.</p>
+                    </div>
+          
+          
+                    <div class="footer1">
+                      <div class="social_icon">
+                        
+                      </div>
+                      <div class="btn">
+                          <button>Saiba mais</button>
+                        </div>
+                    </div>
+          
+                  </div>
+                  <div class="cardc item">
+        
+                    <div class="img_container">
+                      <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="">
+                    </div>
+          
+                    <div class="info">
+                  
+                      <div class="post">Agenda do Servidor</div>
+                      <p class="about">Tenha acesso a agenda nesse link.</p>
+                    </div>
+                    <div class="footer1">
+                      <div class="social_icon">
+                        
+                      </div>
+                      <div class="btn">
+                          <button>Saiba mais</button>
+                        </div>
+                    </div>
+          
+                  </div>
+                  <div class="cardc item">
+        
+                    <div class="img_container">
+                      <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="">
+                    </div>
+          
+                    <div class="info">
+                  
+                      <div class="post">Certidão Funcional</div>
+                      <p class="about">Sistema para emissão de certidão funcional</p>
+                    </div>
+          
+          
+                    <div class="footer1">
+                      <div class="social_icon">
+                        
+                      </div>
+                      <div class="btn">
+                          <button>Saiba mais</button>
+                        </div>
+                    </div>
+          
+                  </div>
+                  <div class="cardc item">
+        
+                    <div class="img_container">
+                      <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="">
+                    </div>
+          
+                    <div class="info">
+                  
+                      <div class="post">E-Doc</div>
+                      <p class="about">Documento Digital</p>
+                    </div>
+          
+          
+                    <div class="footer1">
+                      <div class="social_icon">
+                        
+                      </div>
+                      <div class="btn">
+                          <button>Saiba mais</button>
+                        </div>
+                    </div>
+          
+                  </div>
+                  <div class="cardc item">
+        
+                    <div class="img_container">
+                      <img src="https://assets.nuuvem.com/image/upload/v1/products/618418052f91a002e3f9cf6b/sharing_images/dl3d5ccidn9wlkemhfjr.jpg" alt="">
+                    </div>
+          
+                    <div class="info">
+                  
+                      <div class="post">E-SIC</div>
+                      <p class="about">Sistema eletrônico de informação ao cidadão</p>
+                    </div>
+          
+          
+                    <div class="footer1">
+                      <div class="social_icon">
+                        
+                      </div>
+                      <div class="btn">
+                          <button>Saiba mais</button>
+                        </div>
+                    </div>
+          
+                  </div>
+        
+            </div>
+          </div>
+          </div>
             </div>
         </div>      
 </section>
@@ -693,37 +948,50 @@
   </script>
 
 <script>
-    $(document).ready(function(){
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: true,
-            responsive: {
-                0: { items: 1 },
-                600: { items: 3 },
-                1000: { items: 3 }
-            }
-        });
-    });
+  $(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+  	loop:true,
+    margin:10,
+    nav:true,
+	autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    center: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:3
+        }
+    }
+  });
+});
 </script>
 
 <script>
     const options = {
-  bottom: '64px', // default: '32px'
-  right: 'unset', // default: '32px'
-  left: '32px', // default: 'unset'
-  time: '0.5s', // default: '0.3s'
-  mixColor: '#fff', // default: '#fff'
-  backgroundColor: '#fff',  // default: '#fff'
-  buttonColorDark: '#100f2c',  // default: '#100f2c'
-  buttonColorLight: '#fff', // default: '#fff'
-  saveInCookies: false, // default: true,
-  label: '🌓', // default: ''
-  autoMatchOsTheme: true // default: true
-}
-
-const darkmode = new Darkmode(options);
-darkmode.showWidget();
-</script>
+      bottom: '64px', 
+      right: 'unset', 
+      left: '32px', 
+      time: '0.5s', 
+      mixColor: '#fff', 
+      backgroundColor: '#fff', 
+      buttonColorDark: '#100f2c',  
+      buttonColorLight: '#fff', 
+      saveInCookies: false, 
+      label: '🌓', 
+      autoMatchOsTheme: true 
+    }
+  
+    const darkmode = new Darkmode(options);
+    darkmode.showWidget();
+  </script>
+  <script>
+    
+  </script>
 </body>
 </html>
