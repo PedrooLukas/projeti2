@@ -25,50 +25,6 @@
 </div>
 
 <!-- nav bar 1 -->
-<nav class="navbar navbar-expand-lg">
-    <div class="container">
-        <!-- Logo e título -->
-        <div class="navbar-header d-flex align-items-center">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="https://www.prodap.ap.gov.br/image/logo-gea-white-2024.png" alt="Logo" class="logo me-2" style="height: 40px;">
-                <span class="seed text-white"></span>
-            </a>
-        </div>
-        
-        <!-- Contêiner para alinhar logo e select -->
-        <div class="d-flex align-items-center">
-            <select 
-                class="form-select select-custom custom-dropdown" 
-                aria-label="Órgãos Governamentais" 
-                style="width: auto;" 
-                onchange="window.open(this.value, '_blank');"
-            >
-                <option value="" class="d-none" selected disabled>Órgãos Governamentais</option>
-                <option value="https://sead.portal.ap.gov.br/">Administração</option>
-                <option value="https://ageamapa.portal.ap.gov.br/">Agência Amapá</option>
-                <option value="https://www.afap.ap.gov.br/">Agência de Fomento</option>
-            </select>
-        </div>
-    </div>
-</nav>
-<div class="container">
-<div class="row g-4 align-items-center">
-    <div class="col-12 col-md-6 order-md-1 order-2 ps-md-5 text-md-start text-center py-3 py-md-0">
-        <div>
-            <h1 class="display-5 fw-bold mb-3">EDUCAÇÃO</h1>
-            <h4 class="text-muted">SECRETÁRIA DE ESTADO DE EDUCAÇÃO</h4>
-        </div>
-    </div>
-    <div class="col-12 col-md-6 text-md-end text-center order-md-2 order-1 d-none d-md-block banner1">
-        <img 
-            src="https://i.ibb.co/5kRFfVS/girl-doing-her-homework-while-having-breakfast.jpg" 
-            alt="Banner da Secretaria de Educação" 
-            class="img-fluid shadow-lg rounded">
-    </div>
-</div>
-</div>
-</div>
-<!-- nav bar 2 -->
 <nav class="navbar navbar-expand-lg bg-success text-white py-2">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center w-100">
@@ -158,7 +114,9 @@
 
             <!-- Botão de Toggle para Telas Menores -->
             <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                </span>
             </button>
 
             <!-- Ícone "home" -->
@@ -175,9 +133,17 @@
     </div>
 </nav>
 <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
-    <div class="offcanvas-header bg-success text-white">
-        <h5 class="offcanvas-title" id="mobileNavLabel">Menu</h5>
-        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="offcanvas-header bg-success text-white d-flex justify-content-between align-items-center">
+        <div class="d-flex flex-column">
+            <h5 class="offcanvas-title mb-2" id="mobileNavLabel">Menu</h5>
+        </div>
+        <div class="d-flex">
+            <input type="text" class="form-control me-2" placeholder="Pesquisar...">
+            <a href="noticias.html">
+                <i class="fa-solid fa-magnifying-glass fa-fade fa-lg" style="color: #ffffff;"></i>
+            </a>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
     </div>
     <div class="offcanvas-body bg-success text-white">
         <ul class="navbar-nav">
@@ -257,7 +223,7 @@
                     <li><a class="dropdown-item" href="#">E-Doc</a></li>
                 </ul>
             </li>
-            
+        </ul>
     </div>
 </div>
 <div class="imgc">  
@@ -266,7 +232,7 @@
     <!-- Breadcrumb -->
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Início</a></li>
+            <li class="breadcrumb-item"><a href="index.html">Início</a></li>
             <li class="breadcrumb-item active" aria-current="page">Todas as Notícias</li>
         </ol>
     </nav>
