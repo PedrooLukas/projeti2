@@ -6,6 +6,9 @@ body, a, li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 a {
@@ -143,7 +146,6 @@ li {
 /* cards */
 .news-card {
     border: none;
-    border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s;
 }
@@ -181,8 +183,6 @@ li {
 
 /* banner */
 .banner1 img {
-    max-width: 450px;
-    max-height: 250px;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -196,12 +196,6 @@ li {
 @media (max-width: 991.98px) {
     .home-icon {
         display: block;
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar-brand .seed {
-        display: none;
     }
 }
 
@@ -343,10 +337,12 @@ li {
 }
 
 .container2 .cardc{
+    height: 100%;
     width: 400px;
-    border-radius: 15px;
+    border-radius: 5px;
     background: #fff;
-    border: 1px solid #A9A9A9;
+    border: 2px solid #00a97a;
+    position: relative; /* Adicione esta linha */
 }
 
 .container2 .cardc .img_container{
@@ -357,12 +353,10 @@ li {
 .img_container img{
     width: 100%;
     height: auto;
-    border-radius: 20px;
-    border: 3px solid #A9A9A9;
 }
 
 .cardc .info{
-    border-top: 3px solid #A9A9A9;
+    border-top: 3px solid #00a97a;
     position: relative;
 }
 
@@ -371,7 +365,7 @@ li {
     left: 50%;
     top: -32px;
     transform: translateX(-50%);
-    padding: 20px;
+    padding: 15px;
     font-size: 20px;
     border-radius: 50px;
     background: #00a97a;
@@ -380,7 +374,7 @@ li {
 }
 
 .cardc .info .post{
-    margin-top: 35px;
+    margin-top: 1px;
     text-align: center;
     font-size: 30px;
     font-weight: 600;
@@ -390,7 +384,7 @@ li {
 
 .cardc .info .about{
     padding: 25px;
-    padding-top: 8px;
+    padding-top: 1px;
     text-align: center;
     font-size: 16px;
     color: black;
@@ -398,17 +392,20 @@ li {
 
 
 .container2 .cardc .footer1{
-    padding: 20px;
-    padding-top: 0;
+    position: absolute; 
+    bottom: 20px;
+    width: 100%; 
+    padding: 0 20px; 
     display: flex;
-    justify-content: space-between;
+    justify-content: center; 
     align-items: center;
+    top: 94%;
 }
 
 
 
 .footer1 .btn button{
-    padding: 10px 20px;
+    padding: 7px 20px;
     background: #00a97a;
     font-size: 16px;
     border: none;
@@ -470,10 +467,12 @@ li {
     border: 2px solid #00a97a;
 }
 
-.logo {
-    filter: none !important;
-    background: none !important;
-}
-.navbar .logo {
-    filter: invert(0) hue-rotate(0deg) !important;
-}
+[vw-access-button] {
+    position: fixed !important;
+    top: 10vh !important;
+    z-index: 9999 !important;
+  }
+
+  .map {
+    text-decoration: underline;
+  }
